@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		*{
+			margin:0px;
+			padding:0px;
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+			color: #000000;
+		}
+		#header{
+			/* width: 1300px; */
+			height: 400px;
+			/* border: 1px solid #ADFF2F; */
+		    display: flex;
+		}
+		#contaier{
+			width:80%;
+			height:400px;
+			background-image: url(./img/home-bg.jpg);
+			background-size: cover;
+			
+		}	
+		
+		.box{
+			width:100px;
+			height:100px;
+			/* border:1px solid yellow; */
+			border-radius:50%;
+		    background-image:url(./img/4.jpg);
+			background-size:100% 100%;
+			margin: 0 100px;
+		}
+		#body:hover .box{
+			transform: rotate(7200deg);
+			transition: all 400s linear 0s;
+		}
+		.banner_taital{
+			text-align: center;
+			margin: 170px auto;
+			font-size: 40px;
+			
+		}	
+		.banner_taital a {
+			color: wheat;
+		}
+		.contaier_right{
+			width:300px;
+			height: 400px;
+		background-color:slategray;
+		
+		}	
+		
+		.data-info{
+			margin-top: 20px;
+		margin-left: 20px;
+		}	
+		
+		.text-center{
+			float: left;  
+			/* border: 1px solid #ADFF2F; */
+			/* background-color: skyblue; */
+			margin-left: 17px;
+			
+		}
+		#late{
+			margin-left: 40px;
+			text-align: center;
+		}
+		.qita{
+			width: 60px;
+			height: 30px;
+			/* border: 1px solid #FFD700; */
+			border-radius: 60%;
+			float: left;
+			margin-left:40px;
+			margin-top: 30px;
+			text-align: center;
+		}
+		#btn_1{
+			width: 60px;
+			height: 30px;
+		    border: 1px solid transparent;
+		    border-radius: 60%;
+		}
+		#btn_2{
+			width: 60px;
+			height: 30px;
+		}
+		.qita :hover{
+			color: #FF4500;
+		}	
+		
+		#main{
+			width: 1350px;
+			height:590px;
+			border:1px solid #000000;
+			/* margin-top: 10px; */
+			display:flex;
+		}	
+		.aside-content{
+			font-family: "arial rounded mt bold";
+			font-size: 17px;
+			text-align: center;
+			text-indent: 2em;
+		}
+	  #jisn{
+		  background-color: #f7f6f5;
+		  width: 333px;
+		  height: 590px;
+		 text-align: center;
+	  
+	  
+	  }
+		.hot-list{
+			margin-top: 10px;
+			display: flex;
+			text-align: center;
+		}
+		.hot-list a:hover{
+			color: #00FF7F;
+		}
+		.hot-list li img{
+			width:25px;
+			height: 13px;
+		}	
+		
+		
+		
+		#main_left{
+				width: 1000px;
+				height:590px;
+			    background-image: url(img/630.jpg);
+				background-size: 100% 100%;
+				margin-left: 7px;
+				}
+	    #inner_1,#inner_2{
+				display: flex;
+			}
+			.p1,.p2{
+				margin: 50px auto;
+				text-indent: 2em;
+				font-size: 18px;
+				color:white;
+				font-family: '宋体';
+			}
+		 
+			.images img{
+				width: 200px;
+				height: 270px;
+				background-image: 100% 100%;
+			}
+			
+		.entry-header{
+			width:47%;
+			height: 268px;
+			border: 1px solid #333333;
+			margin-top: 30px;
+			display: flex;
+		    margin-left: 30px;
+			background-color: gainsboro;
+			font-family:"微软雅黑";
+		}
+		.box_1 li{
+			
+			height: 25px;
+			line-height: 25px;
+			text-align: center;
+			position: absolute;
+			top:10px;
+		}
+		.box_1 {
+			/* position: absolute; */
+			display: none;
+		}
+		li:hover ul{
+			height: 60px;
+			display: block;
+	}
+		.entry-header img{
+			width: 180px;
+			height: 268px;
+		}
+		.entry-header1{
+			width:47%;
+			height: 268px;
+			border: 1px solid #333333;
+			margin-top: 30px;
+			display: flex;
+			margin-left: 30px;
+			background-color: #DCDCDC;
+			font-family:"微软雅黑";
+			
+		}	
+		.entry-header1 img{
+			width: 180px;
+			height: 268px;
+		}
+		.three{
+			margin-top: 30px;
+			text-indent: 8em;
+			font-size: 13px;
+		
+			
+		}
+		.pull-left{
+			margin-top: 30px;
+			float: left;
+			margin-left: 10px;
+			
+		}
+		.pull-right{
+			float: right;
+			margin-top: 35px;
+		}
+		#lunbo{
+				width:250px;
+				height:300px;
+				background-size:250px 300px;
+				background-image:url("./img/10.jpg");
+				float: right;
+				transition: all 1.6s linear 0.5s;
+				margin-left: 20px;
+			}	
+		.biaoqian{
+			display: flex;
+		margin: 10px 10px;
+		}	
+		
+		.biaoqian li{
+			
+			margin:0px auto;
+			
+		}	
+		.biaoqian li a{
+			color: #0000FF;
+		}
+		.biaoqian li a :hover{
+			color:sandybrown;
+		}
+		#peng {
+			display: flex;
+			
+		}
+			#peng1{
+				display:flex;
+			}
+			.imgs img{
+				width:250px;
+				height:300px;
+			}	
+			#huang{
+				display: flex;
+				margin-left: 55px;
+			}
+			#footer{
+				display: flex;
+			text-align: center;
+			}
+		
+		.lan{
+			display: flex;
+			margin-left:100px ;
+		}
+		
+	</style>
+	
+	<body id="body">
+		<div id="">
+			<div id="header">
+				
+			
+			<div id="contaier">
+			
+			<div class="banner_taital"><a href=""><b>Enjoy<br>The movies Shows And Songs<b></a></div>
+			</div>
+			<div class="contaier_right">
+				<div class="box"></div>
+				<p style="margin-left:115px;">JPC  Blog</p>
+				<div class="data-info">
+				        <dl class="text-center" title="188">
+				            <dt><span class="count">188</span></dt>
+				            <dd>积分</dd>
+				        </dl>
+				         <dl class="text-center" id="fanBox" title="32">
+				            <dt><span class="count" id="fan">32</span></dt>
+				            <dd>粉丝</dd>
+				        </dl>
+				        <dl class="text-center" title="88">
+				            <dt><span class="count">88</span></dt>
+				            <dd>获赞</dd>
+				        </dl>
+				        <dl class="text-center" title="暂无">
+				            <dt><span class="count">暂无</span></dt>
+				            <dd>评论</dd>
+				        </dl>
+				        <dl class="text-center" title="175">
+				            <dt><span class="count">175</span></dt>
+				            <dd>收藏</dd>
+				        </dl>
+				    </div>
+					<div id="late">
+						<p class="qita">
+					        <button id="btn_1">私信</button>
+							</p>
+							  <p class="qita">
+							<button id="btn_2">关注</button>
+					        </p>
+							</div>
+			</div>
+		</div>		
+			
+			
+				
+					
+				
+			<div id="main">
+				<div id="main_left">
+				        <h1 style="color: deepskyblue;">个人电影分享</h1>
+						
+							
+							
+								
+					
+				
+			<div id="inner_1">	
+			       <div class="images">
+				       <li><a href="#"> <img src="./img/movie-1.webp" alt="" ></a></li>
+					</div>
+             <div class="p1">影片介绍：
+					<span>位于加拿大的深山老林，背负着永生之苦的“金刚狼”罗根（休·杰克曼 Hugh Jackman 饰）隐居于此。在一次
+					与猎人的冲突中,他得到东瀛女子雪生（福岛莉拉 饰）的帮助.雪生是罗根二战期间的旧相识矢志田派来的下属，
+					似乎不久于人世的老友渴望死去之间再见罗根一面。跨越重洋的罗根终于见到在虚弱的矢志田，对方希望他能够保
+					护自己的孙女真理子（冈本多绪 饰）。随着老人谢世，葬礼上突然战火点燃。罗根在雪生的帮助下拼死救出真理子
+					，而矢志田的儿子信玄（真田广之 饰）似乎另有所图。逃亡途中，罗根意外发现他丧失了自愈的能力，金刚狼
+					最大的危机降临……</span>
+				</div>
+				
+			</div>
+		
+		
+		
+			<div id="inner_2">
+					<div class="images">
+						<a href="#"><img src="./img/movie-2.webp" alt=""></a>
+					</div>
+					
+					<div class="p2">影片介绍：
+					         <span>由于一怒杀害了强拆牺牲战友房子的恶霸，屡立功勋的冷锋受到军事法庭的判决。
+							冷锋辗转来到非洲，他辗转各地，只为寻找杀害小云的凶手。在此期间，冷锋逗留的国家发生叛乱，
+							叛徒红巾军大开杀戒，血流成河。中国派出海军执行撤侨任务，期间冷锋得知有一位陈博士被困在
+							五十五公里外的医院，而叛军则试图抓住这位博 士。而从另一位华侨口中得知，杀害小云的凶手正
+							待在这个国家。 在无法得到海军支援的情况下，冷锋只身闯入硝烟四起的战场。不屈不挠的战狼，与冷酷无情的敌人展开悬殊之战……
+					        </span>
+							       
+							
+					</div>
+				</div>			
+				
+				</div>	
+				<div id="jisn">
+					<h3 style="color:#FFD700;"><strong>热门文章</strong></h3>
+					<div class="aside-content">
+							<ul class="hot-list">
+								<li>
+									<a href="" target="_blank">
+									 调用百度ai接口实现图片文字识别详解
+									<img src="./img/yan.png" alt="">
+								    </a>
+								</li>
+							</ul>	
+							<ul class="hot-list">
+								<li>
+									<a href="" target="_blank">
+									 idea右键没有run选项，无法运行main方法及启动springboot工程
+									<img src="./img/yan.png" alt="">
+								    </a>
+								</li>
+							</ul>	
+							<ul class="hot-list">
+								<li>
+									<a href="" target="_blank">
+									  springboot使用webservice发布和调用接口
+									<img src="./img/yan.png" alt="">
+								    </a>
+								</li>
+							</ul>	
+							<ul class="hot-list">
+								<li>
+									<a href="https://blog.csdn.net/student_zz/article/details/89963280" target="_blank">
+									springboot连接sqlserver数据库
+									<img src="./img/yan.png" alt="">
+								    </a>
+								</li>
+							</ul>	
+							<ul class="hot-list">
+								<li>
+									<a href="https://blog.csdn.net/student_zz/article/details/89845269" target="_blank">
+								springboot项目连接hive服务器并进行crud操作
+                                   <img src="./img/yan.png" alt="">
+								    </a>
+								</li>
+							</ul>
+								<br />
+						</div>	
+					        <div class="aside-content search-comter">
+							    <div class="aside-search aside-search-blog">         
+							        <input style="height:25px;" type="text" class="input-serch-blog"  value="" id="search-words" placeholder="搜博主文章">
+							        <a class="btn-search-blog">
+							                <button id="btn_3" style="height:22px;color: #0000FF;">确定</button>
+							        </a>
+							    </div>
+							    </div>        
+									<br />
+						<hr>
+							
+						<div id="" style="margin-top:13px;">
+					
+						<div class="lan">
+							<a href=""><img src="img/00.png" style="width: 49px;height: 49px;"></a>
+						      <div style="height: 52px; line-height:52px;margin-left: 10px; " >
+							  	<a href>项目部署</a>
+							  </div>
+						    </div> 
+								<div class="lan">
+									<a href=""><img src="img/01.png" style="width: 49px;height: 49px;"></a>
+								      <div style="height: 52px; line-height:52px;margin-left: 10px; " >
+									  	<a href="">springboot连接hive</a>
+									  </div>
+								    </div> 
+									<div class="lan">
+										<a href=""><img src="img/02.png" style="width: 49px;height: 49px;"></a>
+									      <div style="height: 52px; line-height:52px;margin-left: 10px; " >
+										  	<a href="">分布式</a>
+										  </div>
+									    </div> 
+										<div class="lan">
+											<a href=""><img src="img/03.png" style="width: 49px;height: 49px;"></a>
+										      <div style="height: 56px; line-height:56px;margin-left: 10px; " >
+											  	<a href="">openssl</a>
+											  </div>
+										    </div> 
+						      
+						</div>
+						
+						
+						
+						
+					 
+				</div>
+		</div>		
+					
+					
+					<div id="main_right">
+						<div class="biaoqian">
+						      <span class="label" style="margin-left: 12px;"><strong>文章标签：</strong></span>
+									<li><a	href="#">推荐电影 </a> </li>
+									<li><a	href="#">国内电影 </a> 
+									  <ul class="box_1"  style="position: absolute;">
+									  				<li style="position:relative;top:10px"><a href="">动作片</a></li>
+									  				<li style="position:relative;top:10px"
+									><a href="">惊悚片</a></li>
+									  				<li style="position:relative;top:10px"
+									><a href="">抗战片</a></li>
+									  				<li style="position:relative;top:10px"
+									><a href="">爱情片</a></li>
+									  
+									             </ul>
+									
+									</li>
+									<li><a	href="#">国外电影 </a> </li>
+									<li><a	href="#">热门电影 </a> </li>
+									<li><a	href="#">黄金VIP电影 </a> </li>
+									<li><a  href="">即将上映</a></li>
+						  </div>  
+						  <div id="peng">
+						  	<div class="entry-header">
+						  		<div id="">
+						  			<li><a href="#"> <img src="./img/6.jpg" alt="" ></a></li>
+						  		</div>
+						  	     
+						  		 <div class="nr_1"> 
+						  		  <h1 style="text-align: center"> 
+						  	    <a href="#" title=""> 神探 </a>
+						  	      </h1>
+						  	   <span class="three">
+						  				&nbsp &nbsp &nbsp &nbsp影片大概就是围绕着寻枪案展开，但是在该片中刘青云拥有一个特殊技能看清人内心中的鬼。
+						  			这里鬼指的是人内心中的“脏东西”，也就是坏的念想。而林家栋饰演的警察就是丢枪案的真凶，林
+						  			由于丢失枪械杀了自己的同事，由此踏上不归路。安志杰饰演的是一个内心单纯的警察，调查林家栋
+						  			的丢枪案。
+						  	    </span>
+						  		
+						  	        <div class="pull-left"> 
+						  	    <a href="#" rel="tag"  title="">人与人之间</a> 
+						  	    <a href="#" rel="tag"  title="">电影</a>
+						  	        </div> 
+						  	    <a class="pull-right" href="#" title="">阅读全文»</a>
+						  	    </div>
+						  	</div>		
+						  	
+							
+							<div class="entry-header1">
+				                 <div class="nr_1"> 
+						  		  <h1 style="text-align: center"> 
+						  	    <a href="#" title=""> 拆弹专家 </a>
+						  	      </h1>
+						  	   <span class="three">
+						  				&nbsp &nbsp &nbsp &nbsp香港某处发生爆炸案，前拆弹专家潘乘风（刘德华 饰）因昏迷于
+										现场，被警方怀疑牵涉其中。苏醒后的潘乘风只能一边逃亡一边查明真相，然而，他的好友董
+										卓文（刘青云 饰）和他的前女友庞玲（倪妮 饰）却给他讲述了两段截然不同的经历。有计划
+										的爆炸案接二连三发生，真相却越来越扑朔迷离……
+						  		</span>
+						  	        <div class="pull-left"> 
+						  	    <a href="#" rel="tag"  title="">刘青云</a> 
+						  	    <a href="#" rel="tag"  title="">爆炸案</a>
+						  	        </div> 
+						  	    <a class="pull-right" href="#" title="">阅读全文»</a>
+						  	    </div>
+								<div id="">
+									<li><a href="#"> <img src="./img/7.jpg" alt="" ></a></li>
+								</div>
+						  	</div>	
+							
+						  </div>
+				
+					
+				<div id="peng1">
+				<div class="entry-header">
+					<div id="">
+						<li><a href="#"> <img src="./img/9.jpg" alt="" ></a></li>
+					</div>
+				      <div class="nr_1"> 
+					  <h1 style="text-align: center"> 
+				    <a href="#" title=""> 紧急救援</a>
+				      </h1>
+				   <span class="three">
+							&nbsp &nbsp &nbsp &nbsp倾覆沉没的钻井平台，顺流直冲的运油车头，直坠入海的满载客机。交通
+							海上应急反应特勤队队长高谦（彭于晏 饰）、机长方宇凌（辛芷蕾 饰）和绞车手赵呈（王彦霖 饰）
+							一次次带领队伍第一时间抵达，站在水火咆哮的最前面，守在危急撤离的最后面，用生命对抗天灾人祸。
+							但在自然面前，特勤员毕竟没有超能力，血肉之躯踩在死亡边缘，真实的恐惧无数次让这些斗士颤抖、无
+							助和气馁。而海上救援的字典里没有“退缩”。当你听见旋翼的轰鸣、洪亮的汽笛、马达的飞驰，那是他们
+							无惧艰难险阻，舍己为人，谱写的一曲英雄之歌。
+				    </span>
+					
+				        <div class="pull-left"> 
+				    <a href="#" rel="tag"  title="">灾难</a> 
+				    <a href="#" rel="tag"  title="">动作片</a>
+				        </div> 
+				    <a class="pull-right" href="#" title="">阅读全文»</a>
+				    </div>
+				</div>		
+			    
+				<div class="entry-header1">
+					
+			           <div class="nr_1"> 
+			    		  <h1 style="text-align: center"> 
+			    	    <a href="#" title=""> 复仇者联盟4 </a>
+			    	      </h1>
+			    	   <span class="three">
+			    				&nbsp &nbsp &nbsp &nbsp一声响指，宇宙间半数生命灰飞烟灭。几近绝望的复仇者们在惊奇队长
+								（布丽·拉尔森 饰）的帮助下找到灭霸（乔什·布洛林 饰）归隐之处，却得知六颗无限宝石均被销毁，
+								希望彻底破灭。如是过了五年，迷失在量子领域的蚁人（保罗·路德 饰）意外回到现实世界，他的出
+								现为幸存的复仇者们点燃了希望。与美国队长（克里斯·埃文斯 饰）冰释前嫌的托尼（小罗伯特·唐尼
+								 饰）找到了穿越时空的方法，星散各地的超级英雄再度集结，他们分别穿越不同的时代去搜集无限宝石
+								 。而在这一过程中，平行宇宙的灭霸察觉了他们的计划。 注定要载入史册的最终决战，超级英雄们为了
+								 心中恪守的信念前仆后继……
+			    	    </span>
+			    		
+			    	        <div class="pull-left"> 
+			    	    <a href="#" rel="tag"  title="">奖项</a> 
+			    	    <a href="#" rel="tag"  title="">图集</a>
+			    	        </div> 
+			    	    <a class="pull-right" href="#" title="">阅读全文»</a>
+			    	    </div>
+			    						<div id="">
+			   <li><a href="#"> <img src="./img/movie-3.webp" alt="" ></a></li>
+			    					</div>
+			    	</div>	
+			    							
+			    </div>
+				    			
+			</div>	    				
+				<h1 style="margin-left: 18px;">即将上映</h1>
+				<div id="footer">
+					
+						
+				
+					<div id="lunbo">
+						</div>
+				<div id="huang">
+					<ul class="imgs">
+						<li><a href="#"><img src="./img/10.jpg"></a></li>
+					    <li><a href="#" class="new_1">许愿神龙</a></li>
+					</ul>
+					<ul class="imgs">
+						<li><a href="#"><img src="./img/11.jpg"></a></li>
+					    <li><a href="#" class="new_1">缉魂</a></li>
+					</ul>
+					<ul class="imgs">
+						<li><a href="#"><img src="./img/12.jpg"></a></li>
+					    <li><a href="#" class="new_1">扫黑*决战</a></li>
+					</ul>
+					<ul class="imgs">
+						<li><a href="#"><img src="./img/13.jpg"></a></li>
+					    <li><a href="#" class="new_1">没有过不去的年</a></li>
+					</ul>
+					</div><!-- <ul class="imgs">
+						<li><a href="#"><img src="./img/14.jpg"></a></li>
+					    <li><a href="#" class="new_1">叱诧风云</a></li>
+					</ul> -->
+					
+				</div>
+				    		
+				    	
+				    	
+				    	
+				    				
+				
+		</div>			
+				
+	
+	
+				
+					
+			
+				
+				
+			
+				
+			
+		
+	
+	
+	
+
+
+
+    <!-- <button  id='button'>点击</button> -->
+  </body>
+
+
+</html>
+
+	<script type="text/javascript">
+		var btn1 = document.getElementById('btn_1');
+		btn_1.onclick = function(){
+			console.log('加我微信');
+			alert('请先加我微信：14703521045')
+		}
+		var btn2 = document.getElementById('btn_2');
+		btn_2.onclick = function(){
+			console.log('###');
+			alert('谢谢你的关注！祝你吃好睡好身体好！')
+		}
+		var btn3 = document.getElementById('btn_3');
+		btn_3.onclick = function(){
+			var text_1 = document.getElementById('search-words');
+			alert('该博主暂未发表此文章!');
+			console.log(text_1);
+			text_1.value="";
+			}
+		var i = 9;
+		function changeimage(){
+			i++;
+       lunbo.style.backgroundImage='url("./img/'+ i +'.jpg")'
+		if (i==13) {
+				i=9;
+			}
+		}
+		
+		setInterval(function(){
+			changeimage();
+	
+		},1600);
+
+		
+		
+	// var a = document.getElementById('body')
+	// button.onclick=function(){
+	// 	a.style.background = 'springgreen';
+		
+	// }
+</script>
